@@ -194,7 +194,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/services-img-1.jpg);">
+							<div class="one-forth services-img" style="background-image: url(images/services.png);">
 							</div>
 						</div>
 					</div>
@@ -316,24 +316,29 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/evelynehone.png" alt="evelyn hone college">
-										<div class="overlay"></div>
-										<div class="link">
-											<span class="read">Read more</h2>
-										</div>
-									</a>
+<div class="blog-img">
+	<img class="img-responsive" src="images/evelynehone.png" alt="evelyn hone college">
+	<div class="overlay"></div>
+	<div class="link">
+		<span class="read" style="cursor:pointer;" data-toggle="modal" data-target="#modalEvelynHone">Read more</span>
+	</div>
+</div>
 <div class="desc">
    <h2><a href="#">Evelyn Hone College</a></h2>
    <p>Diploma in Information Technology (2023-2024)</p>
-   <p><strong>GPA:</strong> 36.5/50</p>
-   <p><strong>Top Grades:</strong></p>
+   <p><strong>GPA:</strong> 36.5/50 <span style="color:#888;">(73%, Merit)</span></p>
+   <p><strong>Relevant Coursework & Achievements:</strong></p>
    <div style="display: flex; flex-wrap: wrap; gap: 6px 10px;">
 	  <span class="badge" style="background:#28a745;">Database Technology (A+)</span>
-	  <span class="badge" style="background:#28a745;">Systems Analysis & Design (A+)</span>
+	  <span class="badge" style="background:#28a745;">Systems Analysis &amp; Design (A+)</span>
 	  <span class="badge" style="background:#28a745;">Web Development (A+)</span>
 	  <span class="badge" style="background:#28a745;">Computer Architecture (A+)</span>
    </div>
+   <ul style="margin-top:8px; margin-bottom:0; padding-left:18px; font-size: 15px; color:#444;">
+	  <li>Graduated with Merit, 7 A/A+ grades in core IT subjects</li>
+	  <li>Capstone project: <em>Missing Persons Reporting System</em> (location tracking, privacy-focused matching)</li>
+	  <li>Active member, Tech Club & Coding Bootcamps</li>
+   </ul>
 </div>
 								</div>
 							</div>
@@ -341,20 +346,22 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/highland.jpg" alt="html5 bootstrap by colorlib.com">
-										<div class="overlay"></div>
-										<div class="link">
-											<span class="read">Read more</h2>
-										</div>
-									</a>
+<div class="blog-img">
+	<img class="img-responsive" src="images/highland.jpg" alt="html5 bootstrap by colorlib.com">
+	<div class="overlay"></div>
+	<div class="link">
+		<span class="read" style="cursor:pointer;" data-toggle="modal" data-target="#modalHighland">Read more</span>
+	</div>
+</div>
 									<div class="desc">
-										<h2><a href="#">Highland Secondary School</a></h2>
-										<p>School Certificate (2017-2019)</p>
+   <h2><a href="#">Highland Secondary School</a></h2>
+   <p>School Certificate (2017-2019)</p>
+   <p style="font-size:15px; color:#444;">Graduated with strong results in Mathematics, Science, Music, and Biology.</p>
 									</div>
 								</div>
 							</div>
 						</div>
+
 						<!--
 						<div class="item">
 							<div class="col-md-12">
@@ -515,12 +522,12 @@
 	
 	</div>
 
-	<!-- jQuery -->
+	<!-- jQuery (must be loaded before Bootstrap JS) -->
 	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap (must be after jQuery) -->
+	<script src="js/bootstrap.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Owl Carousel -->
@@ -531,6 +538,337 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+
+	<!-- Modals moved outside carousel for proper stacking and interaction -->
+	<div class="modal fade" id="modalEvelynHone" tabindex="-1" role="dialog" aria-labelledby="modalEvelynHoneLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px;">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalEvelynHoneLabel">Evelyn Hone College - Exam Transcript</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+	  <div class="modal-body">
+		<div style="overflow-x:auto;">
+		  <table class="table table-bordered table-hover mb-0" style="font-size:15px; color:#444;">
+			<thead class="table-light">
+			  <tr>
+				<th style="width: 5%">#</th>
+				<th style="width: 55%">Subject</th>
+				<th style="width: 20%">Grade</th>
+				<th style="width: 20%">Year</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <!-- Year 1 Semester 1 -->
+			  <tr class="semester-header">
+				<td colspan="4" class="fw-bold">YEAR 1 - SEMESTER 1 (JUNE 2023)</td>
+			  </tr>
+			  <tr class="subject-grade-Aplus">
+				<td>1</td>
+				<td>Computer Systems Architecture I</td>
+				<td><span class="badge grade-badge-Aplus">A+ (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>2</td>
+				<td>Introduction to Programming</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>3</td>
+				<td>Introduction to Networking</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>4</td>
+				<td>Office Productivity Software</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-B">
+				<td>5</td>
+				<td>Business Communications</td>
+				<td><span class="badge grade-badge-B">B (Credit)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <!-- Year 1 Semester 2 -->
+			  <tr class="semester-header">
+				<td colspan="4" class="fw-bold">YEAR 1 - SEMESTER 2 (DECEMBER 2023)</td>
+			  </tr>
+			  <tr class="subject-grade-Aplus">
+				<td>6</td>
+				<td>Database Technology</td>
+				<td><span class="badge grade-badge-Aplus">A+ (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-Aplus">
+				<td>7</td>
+				<td>Computer Systems Architecture II</td>
+				<td><span class="badge grade-badge-Aplus">A+ (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>8</td>
+				<td>Programming II</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-Bplus">
+				<td>9</td>
+				<td>Computer Networking II</td>
+				<td><span class="badge grade-badge-Bplus">B+ (Merit)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <tr class="subject-grade-B">
+				<td>10</td>
+				<td>Systems Analysis, Design and Implementation I</td>
+				<td><span class="badge grade-badge-B">B (Credit)</span></td>
+				<td>2023</td>
+			  </tr>
+			  <!-- Year 2 Semester 1 -->
+			  <tr class="semester-header">
+				<td colspan="4" class="fw-bold">YEAR 2 - SEMESTER 1 (JUNE 2024)</td>
+			  </tr>
+			  <tr class="subject-grade-Aplus">
+				<td>11</td>
+				<td>Web Technologies I</td>
+				<td><span class="badge grade-badge-Aplus">A+ (Distinction)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-Aplus">
+				<td>12</td>
+				<td>Systems Analysis, Design and Implementation II</td>
+				<td><span class="badge grade-badge-Aplus">A+ (Distinction)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>13</td>
+				<td>Operating Systems</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>14</td>
+				<td>Quantitative Methods</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-Bplus">
+				<td>15</td>
+				<td>Programming and Data Structures</td>
+				<td><span class="badge grade-badge-Bplus">B+ (Merit)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <!-- Year 2 Semester 2 -->
+			  <tr class="semester-header">
+				<td colspan="4" class="fw-bold">YEAR 2 - SEMESTER 2 (DECEMBER 2024)</td>
+			  </tr>
+			  <tr class="subject-grade-A">
+				<td>16</td>
+				<td>Computer Security</td>
+				<td><span class="badge grade-badge-A">A (Distinction)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-Bplus">
+				<td>17</td>
+				<td>Web Technologies II</td>
+				<td><span class="badge grade-badge-Bplus">B+ (Merit)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-Bplus">
+				<td>18</td>
+				<td>Project Development</td>
+				<td><span class="badge grade-badge-Bplus">B+ (Merit)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-B">
+				<td>19</td>
+				<td>Management Information Systems</td>
+				<td><span class="badge grade-badge-B">B (Credit)</span></td>
+				<td>2024</td>
+			  </tr>
+			  <tr class="subject-grade-Cplus">
+				<td>20</td>
+				<td>Entrepreneurship</td>
+				<td><span class="badge grade-badge-Cplus">C+ (Clear Pass)</span></td>
+				<td>2024</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+		<div class="grading-key mt-4">
+		  <h6>Grading System:</h6>
+		  <div class="d-flex flex-wrap gap-2">
+			<span class="badge grade-badge-Aplus">A+: Distinction (76-100%)</span>
+			<span class="badge grade-badge-A">A: Distinction (70-75%)</span>
+			<span class="badge grade-badge-Bplus">B+: Merit (66-69%)</span>
+			<span class="badge grade-badge-B">B: Credit (60-65%)</span>
+			<span class="badge grade-badge-Cplus">C+: Clear Pass (55-59%)</span>
+		  </div>
+		</div>
+		<a href="transcripts/evelyn-hone.pdf" class="btn btn-primary mt-3" download>Download Transcript (PDF)</a>
+	  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="modalHighland" tabindex="-1" role="dialog" aria-labelledby="modalHighlandLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px;">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalHighlandLabel">Highland Secondary School - Exam Transcript</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+	  <div class="modal-body">
+		<div style="overflow-x:auto;">
+		  <table class="table table-bordered" style="font-size:15px; color:#444;">
+			<thead class="table-light">
+			  <tr>
+				<th>Subject</th>
+				<th>Grade</th>
+				<th>Standard</th>
+				<th>Percentage Range</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr class="table-success">
+				<td>Science</td>
+				<td>One</td>
+				<td>Distinction</td>
+				<td>75-100%</td>
+			  </tr>
+			  <tr class="table-success">
+				<td>Biology</td>
+				<td>Two</td>
+				<td>Distinction</td>
+				<td>70-74%</td>
+			  </tr>
+			  <tr class="table-success">
+				<td>Music</td>
+				<td>Two</td>
+				<td>Distinction</td>
+				<td>70-74%</td>
+			  </tr>
+			  <tr class="table-primary">
+				<td>English Language</td>
+				<td>Three</td>
+				<td>Merit</td>
+				<td>65-69%</td>
+			  </tr>
+			  <tr class="table-primary">
+				<td>History</td>
+				<td>Three</td>
+				<td>Merit</td>
+				<td>65-69%</td>
+			  </tr>
+			  <tr class="table-primary">
+				<td>Civic Education</td>
+				<td>Three</td>
+				<td>Merit</td>
+				<td>65-69%</td>
+			  </tr>
+			  <tr class="table-primary">
+				<td>Mathematics</td>
+				<td>Three</td>
+				<td>Merit</td>
+				<td>65-69%</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+		<a href="transcripts/highland.pdf" class="btn btn-primary" download>Download Transcript (PDF)</a>
+	  </div>
+		</div>
+	  </div>
+	</div>
+
+  <style>
+	.modal.fade.in, .modal.show {
+	  z-index: 1050 !important;
+	}
+	.modal-backdrop {
+	  z-index: 1040 !important;
+	}
+	/* Transcript Table Styling */
+	.modal .table {
+	  background: #fff;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  margin-bottom: 0;
+	}
+	.modal .table thead th {
+	  background: #f8f9fa;
+	  color: #333;
+	  font-weight: 600;
+	  border-bottom: 2px solid #dee2e6;
+	}
+	.modal .table tbody tr.semester-header td {
+	  background: #e9ecef;
+	  color: #007bff;
+	  font-weight: bold;
+	  font-size: 15px;
+	  border-top: 2px solid #dee2e6;
+	}
+	.modal .table-bordered td, .modal .table-bordered th {
+	  border: 1px solid #dee2e6;
+	}
+	.modal .badge {
+	  font-size: 13px;
+	  padding: 4px 10px;
+	  border-radius: 12px;
+	  font-weight: 500;
+	  letter-spacing: 0.5px;
+	}
+	/* Grade badge colors */
+	.grade-badge-Aplus { background: #28a745 !important; color: #fff !important; }
+	.grade-badge-A { background: #17a2b8 !important; color: #fff !important; }
+	.grade-badge-Bplus { background: #ffc107 !important; color: #212529 !important; }
+	.grade-badge-B { background: #fd7e14 !important; color: #fff !important; }
+	.grade-badge-Cplus { background: #6c757d !important; color: #fff !important; }
+	/* Grading key layout */
+	.grading-key.mt-4 {
+	  margin-top: 1.5rem !important;
+	  margin-bottom: 0.5rem;
+	}
+	.grading-key h6 {
+	  font-weight: 600;
+	  margin-bottom: 0.5rem;
+	}
+	.grading-key .badge {
+	  margin-right: 8px;
+	  margin-bottom: 6px;
+	}
+	/* Responsive modal table */
+	@media (max-width: 575px) {
+	  .modal-dialog {
+		max-width: 98vw !important;
+		margin: 0.5rem auto;
+	  }
+	  .modal .table th, .modal .table td {
+		font-size: 13px;
+		padding: 6px 4px;
+	  }
+	}
+  </style>
+
+	<script>
+	  // Pause/resume carousel when modal is open/closed
+	  $(function() {
+		$('#modalEvelynHone, #modalHighland').on('show.bs.modal', function () {
+		  $('.owl-carousel1').trigger('stop.owl.autoplay');
+		});
+		$('#modalEvelynHone, #modalHighland').on('hidden.bs.modal', function () {
+		  $('.owl-carousel1').trigger('play.owl.autoplay');
+		});
+	  });
+	</script>
 
 	</body>
 </html>
