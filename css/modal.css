@@ -1,0 +1,68 @@
+
+	.modal.fade.in, .modal.show {
+	  z-index: 1050 !important;
+	}
+	.modal-backdrop {
+	  z-index: 1040 !important;
+	}
+	/* Transcript Table Styling */
+	.modal .table {
+	  background: #fff;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  margin-bottom: 0;
+	}
+	.modal .table thead th {
+	  background: #f8f9fa;
+	  color: #333;
+	  font-weight: 600;
+	  border-bottom: 2px solid #dee2e6;
+	}
+	.modal .table tbody tr.semester-header td {
+	  background: #e9ecef;
+	  color: #007bff;
+	  font-weight: bold;
+	  font-size: 15px;
+	  border-top: 2px solid #dee2e6;
+	}
+	.modal .table-bordered td, .modal .table-bordered th {
+	  border: 1px solid #dee2e6;
+	}
+	.modal .badge {
+	  font-size: 13px;
+	  padding: 4px 10px;
+	  border-radius: 12px;
+	  font-weight: 500;
+	  letter-spacing: 0.5px;
+	}
+	/* Grade badge colors */
+	.grade-badge-Aplus { background: #28a745 !important; color: #fff !important; }
+	.grade-badge-A { background: #17a2b8 !important; color: #fff !important; }
+	.grade-badge-Bplus { background: #ffc107 !important; color: #212529 !important; }
+	.grade-badge-B { background: #fd7e14 !important; color: #fff !important; }
+	.grade-badge-Cplus { background: #6c757d !important; color: #fff !important; }
+	/* Grading key layout */
+	.grading-key.mt-4 {
+	  margin-top: 1.5rem !important;
+	  margin-bottom: 0.5rem;
+	}
+	.grading-key h6 {
+	  font-weight: 600;
+	  margin-bottom: 0.5rem;
+	}
+	.grading-key .badge {
+	  margin-right: 8px;
+	  margin-bottom: 6px;
+	}
+	/* Responsive modal table */
+	@media (max-width: 575px) {
+	  .modal-dialog {
+		max-width: 98vw !important;
+		margin: 0.5rem auto;
+	  }
+	  .modal .table th, .modal .table td {
+		font-size: 13px;
+		padding: 6px 4px;
+	  }
+	}
+  
