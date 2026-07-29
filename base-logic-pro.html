@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BaseLogic Pro</title>
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #2563EB;
+            --text: #334155;
+            --bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 2.25rem;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 30px;
+            font-size: 1.35rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 0.875rem;
+            color: #64748B;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #64748B;
+            border-top: 1px solid #E2E8F0;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Effective date: <span id="date"></span></div>
+
+    <p>This privacy policy applies to the <strong>BaseLogic Pro</strong> mobile application (hereby referred to as "Application") created by <strong>Danny Chanda</strong> ("Service Provider") as a Commercial service. This service is intended for use "AS IS".</p>
+
+    <h2>Information Collection and Use</h2>
+    <p>The Application does not explicitly require you to create an account or input personal identity data (such as your name, phone number, or physical address) to function.</p>
+
+    <h2>Third Party Access & Advertising (Google AdMob)</h2>
+    <p>The Application uses third-party services that may collect information used to identify your device. These services allow us to deliver localized and relevant advertisements.</p>
+    <p>Link to privacy policy of third-party service providers used by the application:</p>
+    <ul>
+        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener">Google AdMob / Google Play Services</a></li>
+    </ul>
+
+    <p>Google AdMob may automatically collect and process certain information, including but not limited to:</p>
+    <ul>
+        <li>Device identifiers (such as Advertising ID)</li>
+        <li>IP address and approximate location data</li>
+        <li>Application performance, interaction data, and diagnostic logs</li>
+    </ul>
+
+    <h2>Cookies and Web Beacons</h2>
+    <p>Third-party vendors, including Google, use cookies or web beacons to serve ads based on prior visits to our app or other websites. You may opt out of personalized advertising by visiting your device's Google Settings or Ad Settings.</p>
+
+    <h2>Security</h2>
+    <p>We value your trust in providing us access to minimal device signals. All communication between the Application and third-party ad networks is transmitted securely over encrypted TLS/HTTPS connections.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Changes are effective immediately after they are posted on this page.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us at:</p>
+    <p><strong>Email:</strong> support@baselogic.pro</p>
+
+    <footer>
+        &copy; <span id="year"></span> BaseLogic Pro. All rights reserved.
+    </footer>
+</div>
+
+<script>
+    // Automatically set current date and year
+    document.getElementById('date').innerText = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById('year').innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
