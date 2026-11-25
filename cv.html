@@ -7,13 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --accent-color: #e74c3c;
+            --primary-color: #0f172a;
+            --secondary-color: #2563eb;
+            --accent-color: #ef4444;
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
         }
@@ -24,7 +24,7 @@
         }
         
         .header {
-            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             padding: 2rem 0;
             border-radius: 0.25rem 0.25rem 0 0;
@@ -45,8 +45,8 @@
         }
         
         .section-title {
-            color: var(--secondary-color);
-            border-bottom: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
             position: relative;
@@ -65,11 +65,11 @@
         .skill-category {
             font-weight: 600;
             margin-top: 1rem;
-            color: var(--secondary-color);
+            color: var(--primary-color);
         }
         
         .project-card {
-            border-left: 3px solid var(--primary-color);
+            border-left: 3px solid var(--secondary-color);
             transition: all 0.3s ease;
             height: 100%;
         }
@@ -80,9 +80,9 @@
         }
         
         .contact-badge {
-            background-color: rgba(52, 152, 219, 0.1);
-            border: 1px solid rgba(52, 152, 219, 0.3);
-            color: var(--secondary-color);
+            background-color: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            color: var(--primary-color);
         }
         
         .education-card {
@@ -90,7 +90,7 @@
         }
         
         .experience-card {
-            border-left: 3px solid #2ecc71;
+            border-left: 3px solid #10b981;
         }
         
         .download-btn {
@@ -147,11 +147,11 @@
             <!-- Header with Profile Image -->
             <div class="header text-center mb-4">
                 <div class="p-4 header-content">
-                    <img src="images/grad.jpg" alt="Danny Chanda - Graduation Photo" class="profile-image d-none d-md-block">
+                    <img src="images/grad.jpg" alt="Danny Chanda - Professional Photo" class="profile-image d-none d-md-block">
                     <h1 class="display-4 fw-bold mb-2">Danny Chanda</h1>
-                    <p class="lead mb-0">Full Stack Developer & IT Specialist</p>
+                    <p class="lead mb-0">ICT & Software Development Professional</p>
                 </div>
-                <img src="images/grad.jpg" alt="Danny Chanda - Graduation Photo" class="profile-image d-md-none">
+                <img src="images/grad.jpg" alt="Danny Chanda - Professional Photo" class="profile-image d-md-none">
             </div>
 
             <div class="p-4 p-md-5">
@@ -165,13 +165,23 @@
                         <a href="mailto:dannychanda05@gmail.com" class="btn contact-badge rounded-pill">
                             <i class="bi bi-envelope me-2"></i> dannychanda05@gmail.com
                         </a>
-                        <a href="tel:+260123456789" class="btn contact-badge rounded-pill">
+                        <a href="tel:+260770343370" class="btn contact-badge rounded-pill">
                             <i class="bi bi-phone me-2"></i> +260 770 343 370
                         </a>
-                        <a href="https://DanielChanda.github.io" target="_blank" class="btn contact-badge rounded-pill">
+                        <a href="https://danielchanda.github.io" target="_blank" class="btn contact-badge rounded-pill">
                             <i class="bi bi-globe me-2"></i> Portfolio
                         </a>
+                        <span class="btn contact-badge rounded-pill">
+                            <i class="bi bi-geo-alt me-2"></i> Mass Media, Plot No. 35217, Lusaka
+                        </span>
                     </div>
+                </div>
+
+                <!-- Professional Profile -->
+                <div class="mb-5">
+                    <h2 class="section-title">Professional Profile</h2>
+                    <p>ICT and software development professional whose journey began through self-directed learning and practical experimentation, later complemented by formal training in Information Technology. Experienced in designing, developing, implementing and maintaining software solutions, managing development lifecycles and turning operational requirements into functional systems.</p>
+                    <p>Practical experience in document digitisation, document management systems, ICT technical support, databases, system analysis and design, networking and troubleshooting. Also an independent developer and publisher of Android apps on the Google Play Store.</p>
                 </div>
 
                 <!-- Technical Skills -->
@@ -180,7 +190,7 @@
                     
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="skill-category">PROGRAMMING & FRAMEWORKS</p>
+                            <p class="skill-category">PROGRAMMING &amp; FRAMEWORKS</p>
                             <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="badge bg-primary">PHP</span>
                                 <span class="badge bg-primary">Python</span>
@@ -199,18 +209,156 @@
                             <p class="skill-category">DATABASES</p>
                             <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="badge bg-success">MySQL</span>
-                                <span class="badge bg-success">MS Access</span>
+                                <span class="badge bg-success">MariaDB</span>
                                 <span class="badge bg-success">SQLite</span>
+                                <span class="badge bg-success">PostgreSQL</span>
                             </div>
                             
-                            <p class="skill-category">OTHER IT SKILLS</p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-dark">System Analysis & Design</span>
+                            <p class="skill-category">ICT &amp; SYSTEMS SUPPORT</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="badge bg-dark">Computer Networking</span>
-                                <span class="badge bg-dark">Computer Security</span>
-                                <span class="badge bg-dark">MIS</span>
-                                <span class="badge bg-dark">Business Communication</span>
                                 <span class="badge bg-dark">Hardware Installation</span>
+                                <span class="badge bg-dark">Troubleshooting</span>
+                                <span class="badge bg-dark">Software Installation</span>
+                            </div>
+                            
+                            <p class="skill-category">INFORMATION SYSTEMS</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-dark">System Analysis &amp; Design</span>
+                                <span class="badge bg-dark">Document Management Systems</span>
+                                <span class="badge bg-dark">Document Digitisation</span>
+                                <span class="badge bg-dark">MIS</span>
+                                <span class="badge bg-dark">Computer Security</span>
+                                <span class="badge bg-dark">Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="mb-5">
+                    <h2 class="section-title">Professional Experience</h2>
+                    
+                    <div class="card experience-card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">Assistant Records Officer</h5>
+                                <span class="badge bg-primary">25 Nov 2026 – Present</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted small">Mukuba Pension Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card experience-card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">Digitisation Programmer / DMS Developer</h5>
+                                <span class="badge bg-primary">Oct 2025 – Nov 2026</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted small">Mukuba Pension Trust</span>
+                            </div>
+                            <ul class="mt-3">
+                                <li>Designed, developed and implemented the organisation's Document Management System (DMS), turning operational requirements into a digital records management solution.</li>
+                                <li>Managed the software development lifecycle: requirements, design, development, testing, deployment and enhancements, under the oversight of the ICT Head.</li>
+                                <li>Built functions for document classification, indexing, storage, retrieval, workflow management and digitisation.</li>
+                                <li>Added enhancements to improve operational processes and meet changing records management needs.</li>
+                                <li>Provided maintenance, support and troubleshooting, working with stakeholders to improve usability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card experience-card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">Freelance Software Developer</h5>
+                                <span class="badge bg-primary">2022 – Present</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted small">Independent / Freelance</span>
+                            </div>
+                            <ul class="mt-3">
+                                <li>Analyse client requirements and build customised software through design, development, testing and implementation.</li>
+                                <li>Develop database-driven web applications using PHP, Laravel, MySQL and related technologies.</li>
+                                <li>Develop mobile applications using Flutter and Dart.</li>
+                                <li>Gather requirements, solve technical problems and deliver working solutions to clients.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="mb-5">
+                    <h2 class="section-title">Selected Projects</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card project-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">BaseLogic Pro</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-info">Android</span>
+                                        <span class="badge bg-info">Flutter</span>
+                                        <span class="badge bg-info">Google Play Store</span>
+                                    </div>
+                                    <p class="card-text">Android app for number systems, Boolean algebra, K-maps and logic circuits, with step-by-step worked solutions and practice problems. Developed, tested, maintained and published independently.</p>
+                                    <a href="https://play.google.com/store/apps/details?id=com.baselogic.pro" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-play-store me-1"></i> View on Play Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card project-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Missing Persons Reporting &amp; Matching System</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-info">PHP</span>
+                                        <span class="badge bg-info">Google Maps API</span>
+                                        <span class="badge bg-info">MySQL</span>
+                                    </div>
+                                    <p class="card-text">Web-based system for reporting missing persons and supporting the matching process, with email verification and admin-reviewed matching.</p>
+                                    <a href="https://github.com/DanielChanda/missing-person" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-github me-1"></i> View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card project-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Music Management System</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-info">PHP</span>
+                                        <span class="badge bg-info">Bootstrap</span>
+                                        <span class="badge bg-info">FlutterWave</span>
+                                    </div>
+                                    <p class="card-text">Music platform with royalty tracking, role-based access, streaming and download management, and advertising-supported features.</p>
+                                    <a href="https://github.com/DanielChanda/music-management-system" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-github me-1"></i> View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card project-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Travel Agency Booking System</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-info">Web Application</span>
+                                        <span class="badge bg-info">Flutterwave Payments</span>
+                                        <span class="badge bg-info">Automation</span>
+                                    </div>
+                                    <p class="card-text">Booking platform with Flutterwave payments (card and mobile money), automatic verification, sales reports, PDF receipts and automated email confirmations.</p>
+                                    <a href="https://github.com/DanielChanda/travel-agency" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-github me-1"></i> View Project
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,89 +375,6 @@
                             </div>
                             <h6 class="card-subtitle mb-2 text-muted">Lusaka, Zambia</h6>
                             <p class="card-text">Diploma in Information Technology</p>
-                            <p class="card-text"><strong>GPA:</strong> 36.5/50</p>
-                            <p class="card-text"><strong>Top Grades:</strong></p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-success">Database Technology (A+)</span>
-                                <span class="badge rounded-pill bg-success">Systems Analysis & Design (A+)</span>
-                                <span class="badge rounded-pill bg-success">Web Development (A+)</span>
-                                <span class="badge rounded-pill bg-success">Computer Architecture (A+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience -->
-                <div class="mb-5">
-                    <h2 class="section-title">Professional Experience</h2>
-                    
-                    <div class="card experience-card mb-4">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="card-title fw-bold">Freelance Developer</h5>
-                                <span class="badge bg-primary">2023 - Present</span>
-                            </div>
-                            <ul class="mt-3">
-                                <li>Assisted university students in developing final year projects covering system analysis, design, and implementation</li>
-                                <li>Delivered working applications using PHP, Laravel, MySQL, Flutter and other technologies</li>
-                                <li>Gained extensive experience in client communication, requirement gathering, and problem solving</li>
-                                <li>Built custom solutions aligned with academic project guidelines and industry standards</li>
-                            </ul>
-                        </div>
-                    </div>
-                
-                    <h4 class="section-title mt-5 mb-3">Personal & Open-Source Projects</h4>
-                    
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Missing Persons Reporting System</h5>
-                                    <div class="mb-2">
-                                        <span class="badge bg-info">Laravel</span>
-                                        <span class="badge bg-info">Google Maps API</span>
-                                        <span class="badge bg-info">MySQL</span>
-                                    </div>
-                                    <p class="card-text">Developed a secure web system with location tracking, email verification, and privacy-focused matching algorithm.</p>
-                                    <a href="https://github.com/DanielChanda/missing-person" target="_blank" class="btn btn-sm btn-outline-primary">
-                                        <i class="bi bi-github me-1"></i> View Project
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Music Management System</h5>
-                                    <div class="mb-2">
-                                        <span class="badge bg-info">PHP</span>
-                                        <span class="badge bg-info">Bootstrap</span>
-                                        <span class="badge bg-info">Role-Based Access</span>
-                                    </div>
-                                    <p class="card-text">Comprehensive system with royalties tracking, user roles, streaming/download management, and ad-supported features.</p>
-                                    <a href="https://github.com/DanielChanda/music-management-system" target="_blank" class="btn btn-sm btn-outline-primary">
-                                        <i class="bi bi-github me-1"></i> View Project
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Travel Agency Booking System</h5>
-                                    <div class="mb-2">
-                                        <span class="badge bg-info">Web Application</span>
-                                        <span class="badge bg-info">Payment Processing</span>
-                                        <span class="badge bg-info">Automation</span>
-                                    </div>
-                                    <p class="card-text">Complete booking platform with payment workflows, reservation tracking, and automated confirmation system.</p>
-                                    <a href="https://github.com/DanielChanda/travel-agency" target="_blank" class="btn btn-sm btn-outline-primary">
-                                        <i class="bi bi-github me-1"></i> View Project
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
