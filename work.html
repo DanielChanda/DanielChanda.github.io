@@ -168,6 +168,7 @@
     const nav = document.getElementById('navbar-links');
     toggle.addEventListener('click', () => {
       const open = nav.classList.toggle('open');
+      toggle.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open);
     });
     document.querySelectorAll('.navbar-links a').forEach(link => {
